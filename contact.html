@@ -3,13 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Feedback Form</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-    </ul>
+    <h1>Feedback Form</h1>
+    <hr>
+    <p><i>We would like to hear your sincere feedback</i></p>
+
+    <form action="index.html">
+        <table>
+        <tr>
+            <td><p><b>Name</b></p></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td><p><b>Email</b></p></td>
+            <td><input type="email" placeholder="exp:john@abu.com"></td>
+        </tr>
+        <tr>
+            <td><p><b>Date</b></p></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><p><b>Gender</b></p></td>
+            <td><input type="radio" name="gender" id="" value="" checked>Male <input type="radio" name="gender" id=""> Female</td>
+        </tr>
+        <tr>
+            <td><p><b>Service</b></p></td>
+            <td><input type="range" min="0" max="100" value="50" oninput="document.getElementById('rangevalue').textContent=this.value"> 
+                <label for=""><span id="rangevalue">50</span>%</label></td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Area of <br>Improvement</b></p>
+             </td>
+            <td>
+                <input type="checkbox">Food <br>
+                <input type="checkbox" name="" id="">Enviroment <br>
+                <input type="checkbox">Staff
+            </td>
+            <td>
+                <input type="checkbox">Clean <br>
+                <input type="checkbox" name="" id="">Taste <br>
+                <input type="checkbox">price
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><p><b>Comment</b></p></td>
+            <td><textarea name="" id="" rows="6" cols="50"></textarea></td>
+        </tr>
+    </table>
+    <input type="submit" value="SUBMIT"><input type="reset" value="RESET">
+    </form>
 </body>
 </html>
+
 
